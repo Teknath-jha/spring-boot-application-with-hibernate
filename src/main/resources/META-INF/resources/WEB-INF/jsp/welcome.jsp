@@ -6,7 +6,7 @@
 	
 	<body>
 		 Welcome to spring Boot!
-		 Name : ${name }
+		 Name : ${ name }
 	</body>
 
 </html>
