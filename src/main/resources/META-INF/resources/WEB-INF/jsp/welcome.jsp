@@ -5,8 +5,9 @@
 	</head>
 	
 	<body>
-		 Welcome to spring Boot!
-		 Name : ${ name }
+		 Welcome to  ${ name }
+		 <hr>
+		 <div><a href="list-todos">Manage</a> your todos.</div>
 	</body>
 
 </html>
