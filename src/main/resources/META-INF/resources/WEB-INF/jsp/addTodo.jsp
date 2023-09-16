@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
 
@@ -12,13 +14,16 @@
 	<div class="container">
 			 
 			 <h1>Enter Todo Details...</h1>
-			 <form method="post" class="form">
+			 <form:form method="post" modelAttribute="todo">
 			 	
-			 	Description : <input type="text" name="description" required>
+			 	Description : <form:input type="text" path="description" 
+			 										required="required"/>
 			 	<br>
+			 	<form:input type="hidden" path="done" />
+			 	<form:input type="hidden" path="id" />
 			 	
 			 	<button type="submit" class="btn btn-success">Submit</button>
-			 </form>
+			 </form:form>
 		 
 	</div>
 		 <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
