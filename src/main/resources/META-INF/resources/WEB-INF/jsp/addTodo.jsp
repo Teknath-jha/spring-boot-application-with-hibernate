@@ -18,6 +18,7 @@
 			 	
 			 	Description : <form:input type="text" path="description" 
 			 										required="required"/>
+			 				  <form:errors  path="description" class="text-warning"/>
 			 	<br>
 			 	<form:input type="hidden" path="done" />
 			 	<form:input type="hidden" path="id" />
