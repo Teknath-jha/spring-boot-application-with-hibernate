@@ -2,9 +2,11 @@ package com.in28minutes.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import jakarta.validation.constraints.Size;
 
-
+@EntityScan
 public class Todo {
 	
 	private int id;
